@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About page</title>
+    <style>
+        body {
+            background-color: #9B59B6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .container {
+            margin: 2em auto;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar {
+            text-align: center;
+            flex: 1;
+        }
+
+        .navbar a {
+            padding: 6px 20px;
+            text-decoration: none;
+            color: rgb(193, 88, 88);
+            margin-left: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .project-section {
+            margin-top: 20px;
+        }
+
+        .project-section h2 {
+            color: #333;
+            background-color: #9B59B6; /* Add background color */
+            padding: 10px; /* Add padding */
+            border-radius: 5px; /* Add border radius for a rounded look */
+            color: #fff; /* Text color */
+        }
+        .project-abstarct{
+            margin-top: 20px;
+        }
+
+        .project-abstarct h2 {
+            color: #333;
+            background-color: #9B59B6; /* Add background color */
+            padding: 10px; /* Add padding */
+            border-radius: 5px; /* Add border radius for a rounded look */
+            color: #fff; /* Text color */
+        }
+
+        .project-contribution{
+            margin-top: 20px;
+        }
+
+        .project-contribution h2 {
+            color: #333;
+            background-color: #9B59B6; /* Add background color */
+            padding: 10px; /* Add padding */
+            border-radius: 5px; /* Add border radius for a rounded look */
+            color: #fff; /* Text color */
+        }
+
+
+        .project-section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Classification of Arrhythmia using CNN</a>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="header">
+            <div class="navbar">
+                <a href="/">HOME</a>
+                <a href="/contact">CONTACT</a>
+            </div>
+
+        </div>
+    </div>
+
+    <h1>About Page</h1>
+
+    <div class="container">
+        <div class = "project-abstarct">
+            <h2>Abstract of the Project</h2>
+        
+        <p>The majority of heart illnesses can be diagnosed by analysing the ECG signal for arrhythmias. The PQRST waves in an 
+            ECG signal represent one cardiac cycle. This suggested study addresses several methods and transformations that have 
+            been previously described in the literature for analysing an ECG signal and extracting features from an arrhythmia 
+            analysis. Cardiologists must manually identify different ECG heart-beat classes, which takes time and effort. On 
+            computer-based techniques for classifying these heart diseases. A proposed taxonomy based on dichotomies involving 
+            full time series-based versus feature-based, AAMI versus Non-AAMI, and inter-patient versus intra-patient based 
+            distinctions is used in this work to organise the current research. This work's primary contributions are a comprehensive 
+            evaluation of the literature on the detection of irregular heartbeats and the identification of relevant research</p>
+        </div>
+        <div class="project-contribution">
+            <h2>My Contribution:</h2>
+            <p>The conventional techniques might not achieve efficient results 
+            due to the inter-patient variability in ECG signals. Additionally, the efficiency 
+            and accuracy of traditional methods could be negatively affected by the 
+            increasing size of data. The techniques presented in literature have been 
+            applied to smaller datasets however, for the purpose of generalization, the 
+            performance should be tested on larger datasets. There are methods reported 
+            that use 2-D ECG signals, however, to the best of our knowledge, there are 
+            not clear details on how the 1-D ECG signal is converted to 2-D images for 
+            using 2-D CNN models. Most methods have been tested on only a few types 
+            of arrhythmia and must be evaluated on all major types of arrhythmia. It 
+            should be noted that the performance of methods developed for 1-D ECG 
+            signals can be further improved. Towards this end, the major contributions of 
+            our proposed work are:
+            1. Spectrograms (2-D images) are employed, which are generated 
+            from the 1-D ECG signal using STFT. In addition, data augmentation was 
+            used for the 2-D image representation of ECG signals.
+            2. A state-of-the-art performance was achieved in ECG arrhythmia 
+            classification by using the proposed CNN-based method with 2-D 
+            spectrograms as input. </p>
+        </div>
+        <div class="project-section">
+            <h2>Proposed Scheme</h2>
+            <p>A schematic representation of the proposed scheme is presented in 
+                Figure 1. The method consists of five steps, i.e., signal pre-processing, 
+                generation of 2-D images (spectrograms), augmentation of data, extraction of 
+                features from the data (using the CNN model), and its classification based on 
+                the extracted features.</p>
+            <!--<img src="proposed.jpg " class="center">-->
+        </div>
+
+        <div class="project-section">
+            <h2>Preparing the Project by Following the Below Steps:</h2>
+            <ul>
+                <li>Working with Sequential type of modeling</li>
+                <li>Working with Keras capabilities</li>
+                <li>Working with image processing techniques</li>
+                <li>Build a web application using the Flask framework</li>
+                <li>Afterwards training our dataset in the IBM cloud and building another model from IBM and we will also
+                    test it.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Hardware & Software Designing</h2>
+            <p><strong>Hardware Components used:</strong></p>
+            <p>Since we are using the IBM cloud as a platform to execute this Project we don’t need any hardware components
+                other than our system.</p>
+            <p><strong>Software Components Used:</strong></p>
+            <p>Anaconda Navigator: We will be using Anaconda Navigator which is installed in our system and Watson studio
+                from the IBM cloud to complete the project...</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Experimental Investigations</h2>
+            <p>In this project, we have deployed our training model using CNN on IBM 
+                Watson studio and in our local machine. We are deploying 4 types of CNN 
+                layers in a sequential manner starting from :</p> 
+                <p>1. Convolutional layer 2D: A 2-D convolutional layer applies sliding 
+                    convolutional filters to 2-D input. The layer convolves the input by moving 
+                    the filters along the input vertically and horizontally and computing the dot 
+                    product of the weights and the input, and then adding a bias term.</p> 
+                <p>2. Pooling Layer: Pooling layers are used to reduce the dimensions of the 
+                    feature maps. Thus, it reduces the number of parameters to learn and the 
+                    amount of computation performed in the network. The pooling layer 
+                    summarises the features present in a region of the feature map generated by a 
+                    convolution layer</p>
+                <p>3. Fully-Connected layer: After extracting features from multiple 
+                    convolution layers and pooling layers, the fully connected layer is used to 
+                    expand the connection of all features. Finally, the SoftMax layer makes a 
+                    logistic regression classification. Fully-connected layer transfers the weighted 
+                    sum of the output of the previous layer to the activation function. </p>
+                <p>4. Dropout Layer: There is usually a dropout layer before the fully connected 
+                    layer. The dropout layer will temporarily disconnect some neurons from the 
+                    network according to the certain probability during the training of the 
+                    convolution neural network, which reduces the joint adaptability between 
+                    neuron nodes, reduces overfitting, and enhances the generalization ability of 
+                    the network.
+                </p>
+        </div>
+    </div>
+</body>
+
+</html>
